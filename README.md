@@ -1,6 +1,6 @@
 # WebDevPortfolio
 
-Welcome to my Web Development Portfolio! This repository is a collection of my work in the realm of web and frontend development. It showcases a variety of projects, ranging from simple HTML/CSS pages to more complex applications involving JavaScript and modern web frameworks.
+Welcome to Haoxuan's Web Development Portfolio! This repository is a collection of my work in the realm of web and frontend development. It showcases a variety of projects, ranging from simple HTML/CSS pages to more complex applications involving JavaScript and modern web frameworks.
 
 ## Overview
 
@@ -10,9 +10,8 @@ This portfolio includes a variety of projects and exercises that demonstrate my 
 
 Below is a list of projects contained in this repository. Each project has its own directory and README for more detailed information.
 
-- **Project 1**: Description of Project 1
-- **Project 2**: Description of Project 2
-- ...
+- **Project 1**: To be completed
+- **Project 2**: To be completed
 
 ## Technologies
 
@@ -21,7 +20,6 @@ This portfolio uses a range of technologies, including:
 - HTML5
 - CSS3
 - JavaScript
-- [Other Technologies/Frameworks You Use]
 
 ## Contributing
 
@@ -29,10 +27,10 @@ This repository is primarily for personal display of my work. However, feedback 
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source.
 
 ## Contact
 
-Feel free to contact me for any information or if you have any questions. [Your Contact Information]
+Feel free to contact me for any information or if you have any questions.
 
 Thank you for visiting my Web Development Portfolio!
