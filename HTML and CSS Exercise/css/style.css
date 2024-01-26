@@ -1,0 +1,349 @@
+body {
+	background-color: white;
+    font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	position: fixed; /*固定定位*/
+	top: 0; /*顶部对齐*/
+	left: 0; /*左边对齐*/
+	width: 100%; /*宽度设置*/
+	z-index: 1000; /*header在其他内容之上*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #ffffff;
+	height: 40px;
+}
+
+.header-left {
+	position: absolute;
+	color: #c2a661;
+	text-align: left;
+	padding: 10px 20px;
+	font-size: 1.7vw;
+	font-weight: bold;
+	left: 5%;
+}
+
+/*设置导航栏*/
+.header-nav-bar {
+	text-align: right;
+	padding-right: 20px;
+	font-size: 1.7vw;
+	position: absolute;
+	right: 10%;
+}
+
+/*设置导航链接的默认样式*/
+.header-nav-bar a{
+	color: #000000;
+	text-decoration: none; /*移除链接下划线*/
+	margin-left: 15px; /*在链接之间添加一些空间*/
+}
+
+/*设置“Home”链接的特殊样式*/
+.header-nav-bar a:first-child {
+	color: #c2a661;
+}
+
+/*设置鼠标悬停时链接的样式*/
+.header-nav-bar a:hover {
+	color: #c2a661;
+}
+
+.header-nav-bar li {
+	display: inline; /*将列表显示在一行*/
+}
+
+.top-banner {
+	background: url("../img/image3.png") no-repeat center center fixed;
+	background-size: cover; /*图片背景覆盖整个区域*/
+	background-position: center; /*背景图片居中*/
+	position: relative;
+	text-align: center; /*文本居中对齐*/
+	display: flex; /*使用flex布局*/
+	justify-content: center;
+	align-items: center; /*水平居中*/
+	height: 600px; 
+	color: #ffffff;
+	font-family: "Times New Roman", Arial, sans-serif; /*备用字体为Arial*/
+	font-size: 28px; /*字体大小*/
+	line-height: 1.5; /*行间距*/
+	letter-spacing: 8px;
+}
+
+.top-banner p {
+	position: absolute;
+	top: 28%; /*从顶部开始的位置*/
+	left: 50%; /*从左侧开始的位置*/
+	transform: translateX(-50%); /*水平居中对齐*/
+	margin: 0; /*移除默认的外边距*/
+	padding: 20px 0; /*为段落添加上下内边距*/
+}
+
+/* 设置.services类，作为flex容器，包含两个子元素 */
+.services {
+    display: flex; /* 使用flex布局 */
+    align-items: stretch; /* 使所有子项垂直方向上高度一致 */
+    justify-content: center; /* 水平居中子项 */
+    padding: 55px; /* 容器四周内边距 */
+    gap: 45px; /* 子项之间的间隔 */
+}
+
+/* 设置.service-left类，作为一个flex项 */
+.service-left {
+    height: 250px; /* 固定高度 */
+    flex: 1; /* 伸缩比例为1，表示根据容器大小伸缩 */
+    display: flex; /* 使用flex布局 */
+    width: calc(35% - 10vw); /* 计算宽度，基于容器宽度的35%减去10%的视口宽度 */
+    background: url("../img/flower.png"); /* 背景图片 */
+    background-size: cover; /* 背景图片覆盖整个元素区域 */
+    background-position: center; /* 背景图片居中显示 */
+    flex-direction: column; /* 子项垂直排列 */
+    justify-content: center; /* 垂直居中内容 */
+    align-items: center; /* 水平居中内容 */
+    padding: 5vw; /* 元素内边距，基于视口宽度 */
+}
+
+/* 设置.service-left类中的头部（标题）样式 */
+.service-left-head {
+    font-size: 2vw; /* 字体大小，基于视口宽度 */
+    color: #ffffff; /* 字体颜色 */
+    margin-top: 5px; /* 顶部外边距 */
+    margin-bottom: 10vw; /* 底部外边距，基于视口宽度 */
+    letter-spacing: 6px; /* 字符间距 */
+}
+
+/* 设置.service-left类中的内容段落样式 */
+.service-left-content p {
+    font-size: 1.5vw; /* 字体大小，基于视口宽度 */
+    margin-bottom: 2vw; /* 底部外边距，基于视口宽度 */
+    letter-spacing: 1px; /* 字符间距 */
+    color: #ffffff; /* 字体颜色 */
+    text-align: center; /* 文本居中 */
+    line-height: 1.4; /* 行高 */
+    word-spacing: 5px; /* 单词间距 */
+    font-family: "Times New Roman", Arial, sans-serif; /* 字体 */
+}
+
+/* 设置.service-left类中底部按钮样式 */
+.service-left-bottom button {
+    font-size: 1vw; /* 字体大小，基于视口宽度 */
+    color: #ffffff; /* 字体颜色 */
+    background-color: transparent; /* 背景透明 */
+    border: 0.5px solid #ffffff; /* 边框样式 */
+    padding: 0.7vw 5vw; /* 内边距，基于视口宽度 */
+    cursor: pointer; /* 鼠标悬停时显示指针图标 */
+    margin-top: 15px; /* 顶部外边距 */
+    transition: background-color 0.3s; /* 背景颜色变化过渡时间 */
+}
+
+/* 设置按钮悬停效果 */
+.service-left-bottom button:hover {
+    background-color: #c4b396; /* 悬停时背景颜色 */
+    color: #ffffff; /* 悬停时字体颜色 */
+}
+
+/* 设置.service-right类 */
+.service-right {
+    flex: 2; /* 伸缩比例为2，相对占据更多空间 */
+    background-image: url("../img/image1.png"); /* 背景图片 */
+    background-size: cover; /* 背景图片覆盖整个元素区域 */
+    background-position: center; /* 背景图片居中显示 */
+    height: 250px; /* 固定高度 */
+    padding: 5vw; /* 元素内边距，基于视口*/
+}
+
+.testimonial {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	font-family: "Times New Roman", Arial, sans-serif; /* 字体 */
+	color: #000000;
+	padding: 20px;
+}
+
+.testimonial-top {
+	font-size: 80px;
+	margin-bottom: 0;
+}
+
+.testimonial-content p{
+	margin-top: 0;
+	font-size: 25px;
+	word-spacing: 4px; /* 单词间距 */
+	letter-spacing: 1px; /* 字符间距 */
+}
+
+.testimonial-bottom {
+	color: #c2a661;
+	margin-bottom: 6%;
+}
+
+.testimonial-leftArrow {
+	position: absolute;
+	top: 50%;
+	left: 60px;
+	font-size: 40px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #c2a661;
+	/* padding: 60px; */
+}
+
+.testimonial-rightArrow {
+	position: absolute;
+	top: 50%;
+	right: 60px;
+	font-size: 40px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #c2a661;
+	/* padding: 60px; */
+	/* border-right: 500px; */
+}
+
+.bottom-banner {
+	z-index: 1; /* 设置层级 */
+	background-image: url("../img/image2.png");
+	background-attachment: fixed;
+	display: flex; /* 使用弹性盒子布局 */
+	position: relative; /* 相对定位，为子元素的绝对定位提供参照 */
+	height: 400px; 
+	background-position: 50% 120px; /* 背景图片从顶部开始显示 */
+	background-size: 87%; /* 背景图片大小设置为原始尺寸的87% */
+	background-repeat: no-repeat; 
+	margin-top: 60px;
+}
+
+.bottom-banner-content {
+	align-items: center; /* 在垂直方向上居中对齐子元素 */
+	justify-content: center; /* 在水平方向上居中对齐子元素 */
+	position: absolute; /* 绝对定位 */
+	display: flex; /* 使用弹性盒子布局 */
+	background-image: url("../img/flower.png"); 
+	background-size: cover; /* 背景图片覆盖整个元素 */
+	background-position: center; /* 背景图片居中显示 */
+	z-index: 2; /* 设置层级，确保在.bottom-banner之上 */
+	flex-direction: column; /* 子元素垂直排列 */
+	padding: 5vw; /* 内边距设置为视口宽度的5% */
+	height: 55%; /* 高度设置为父元素高度的55% */
+	width: 18%; /* 宽度设置为父元素宽度的18% */
+	top: 10%; /* 距离父元素顶部10% */
+	left: 60%; /* 距离父元素左侧60% */
+}
+
+.bottom-banner-head {
+	z-index: 3;
+	font-size: 2.8vw; /* 字体大小，基于视口宽度 */
+	margin-bottom: 8vw; /* 底部外边距，基于视口宽度 */
+	letter-spacing: 6px; /* 字符间距 */
+	color: #ffffff; /* 字体颜色 */
+	text-align: center; /* 文本居中 */
+	line-height: 1.4; /* 行高 */
+	word-spacing: 5px; /* 单词间距 */
+	font-family: "Arial", sans-serif; /* 字体 */
+}
+
+.bottom-banner-middle {
+	z-index: 3;
+	font-size: 1.5vw; /* 字体大小，基于视口宽度 */
+	margin-bottom: 2vw; /* 底部外边距，基于视口宽度 */
+	letter-spacing: 4.5px; /* 字符间距 */
+	color: #ffffff; /* 字体颜色 */
+	text-align: center; /* 文本居中 */
+	line-height: 1.4; /* 行高 */
+	word-spacing: 5px; /* 单词间距 */
+	font-family: "Times New Roman", Arial, sans-serif; /* 字体 */
+}
+
+.bottom-banner-bottom button{
+	z-index: 3;
+	font-size: 1vw; /* 字体大小，基于视口宽度 */
+	color: #ffffff; /* 字体颜色 */
+	background-color: transparent; /* 背景透明 */
+	border: 0.5px solid #ffffff; /* 边框样式 */
+	padding: 0.7vw 4vw; /* 内边距，基于视口宽度 */
+	cursor: pointer; /* 鼠标悬停时显示指针图标 */
+	margin-top: 15px; /* 顶部外边距 */
+	transition: background-color 0.3s; /* 背景颜色变化过渡时间 */
+}
+
+.bottom-banner-bottom button:hover {
+    background-color: #c4b396; /* 悬停时背景颜色 */
+    color: #ffffff; /* 悬停时字体颜色 */
+}
+
+.footer {
+	background-color: #c2a661;
+	color: #ffffff;
+	padding: 2% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10%;
+	margin-left: 6.5%;
+	margin-right: 6.5%;
+	height: 90px;
+	margin-bottom: 5%;
+	align-items: center;
+	position: relative;
+}
+
+.footer-content {
+  display: flex; /* 使用弹性盒模型 */
+  justify-content: space-between; /* 子元素在容器中均匀分布 */
+  align-items: flex-start; /* 子元素顶部对齐 */
+  text-align: left;
+  padding: 1% 10%; /* 调整内边距 */
+  font-size: 1.2vw;
+  width: 50%; /* 占满父容器的宽度 */
+}
+
+.footer-content-left,
+.footer-content-middle,
+.footer-content-right {
+	flex: 1; /* 允许子元素根据需要伸缩填充空间 */
+}
+
+.footer-content-left {
+	margin-right: 5%; 
+    border-right: 1px solid #ffffff;
+}
+
+.footer-content-middle {
+	margin-right: 4%; 
+    border-right: 1px solid #ffffff;
+}
+
+.footer-button {
+	display: flex;
+	justify-content: flex-end; /* 将按钮推到最右边 */
+	align-items: center;
+	padding: 20px 0;
+	position: absolute; /* 绝对定位 */
+	right: 10%; 
+	top: 50%; /* 将按钮垂直居中 */
+	transform: translateY(-50%); /* 与 top 一起使用，确保完全居中 */
+}
+
+.footer-button button {
+	font-size: 1vw; /* 字体大小，基于视口宽度 */
+	color: #ffffff; /* 字体颜色 */
+	background-color: transparent; /* 背景透明 */
+	border: 0.5px solid #ffffff; /* 边框样式 */
+	padding: 0.7vw 2vw; /* 内边距，基于视口宽度 */
+	cursor: pointer; /* 鼠标悬停时显示指针图标 */
+	transition: background-color 0.3s; /* 背景颜色变化过渡时间 */
+}
+
+.footer-button button:hover {
+	background-color: #c4b396; /* 悬停时背景颜色 */
+	color: #ffffff; /* 悬停时字体颜色 */
+}
