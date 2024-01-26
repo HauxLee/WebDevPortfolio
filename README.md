@@ -10,7 +10,7 @@ This portfolio includes a variety of projects and exercises that demonstrate my 
 
 Below is a list of projects contained in this repository. Each project has its own directory and README for more detailed information.
 
-- **Project 1**: To be completed
+- **Project 1**: HTML and CSS Exercise
 - **Project 2**: To be completed
 
 ## Technologies
