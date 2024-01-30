@@ -11,6 +11,7 @@ This portfolio includes a variety of projects and exercises that demonstrate my 
 Below is a list of projects contained in this repository. Each project has its own directory and README for more detailed information.
 
 - **Project 1**: HTML and CSS Exercise
+  - [View Project Showcase](https://hauxlee.github.io/WebDevPortfolio/HTML%20and%20CSS%20Exercise/index.html)
 - **Project 2**: To be completed
 
 ## Technologies
@@ -34,3 +35,7 @@ This project is open source.
 Feel free to contact me for any information or if you have any questions.
 
 Thank you for visiting my Web Development Portfolio!
+
+---
+
+This markdown update incorporates a direct link to the showcase of Project 1, allowing viewers to easily access and view your project.
