@@ -35,7 +35,3 @@ This project is open source.
 Feel free to contact me for any information or if you have any questions.
 
 Thank you for visiting my Web Development Portfolio!
-
----
-
-This markdown update incorporates a direct link to the showcase of Project 1, allowing viewers to easily access and view your project.
